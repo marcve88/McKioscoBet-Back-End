@@ -27,9 +27,9 @@ namespace McKioscoBet_Back_End.Controllers
             return new string[] { "va", "lue2" };
         }
         [HttpPost]
-        public IEnumerable<string> Instert()
+        public AnimalBet Instert([FromBody]AnimalBet[] arr)
         {
-            return new string[] { "va", "lue2" };
+            return arr[0];
         }
     }
 }
